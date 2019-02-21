@@ -151,24 +151,24 @@ const list = ()=>{
               <ul className="VFI">
                 <li>
                   <a href className="lii">
-                    <img src="Img/ist.png" alt="Instagram" />
+                    <img src="/public/ico/ist.png" href="true" alt="Instagram" />
                   </a>
                 </li>
                 <li>
                   <a href className="lii">
-                    <img src="Img/vk.png" alt="VK" />
+                    <img src="/public/vk.png" alt="VK" />
                   </a>
                 </li>
                 <li>
                   <a href className="lii">
-                    <img src="Img/face.png" alt="Facebook" />
+                    <img src="/public/face.png" alt="Facebook" />
                   </a>
                 </li>
               </ul>
             </div>
           </header>
           <nav className="menu">
-            <img src="Img/NORN.png" alt className="imgg" />
+            <img src="/public/NORN.png" alt="Norh" className="publicg" />
             <div>
               <ul className="uul">
                 <li>
@@ -189,7 +189,7 @@ const list = ()=>{
           <section>
             <div className="c1">
               <div className="c11">
-                <img src="Img/houses.png" className="c12" alt />
+                <img src="/public/houses.png" className="c12" alt="foto" />
                 <div className="c13" />
               </div>
             </div>
@@ -228,7 +228,7 @@ const list = ()=>{
           <div className="radial" />
           <article>
             <figure>
-              <img src="img/mark5_white.png" alt />
+              <img src="/public/mark5_white.png" alt="foto" />
               <figcaption>КАКОЙ ВИД ОБУЧЕНИЯ ПОДОЙДЕТ ВАМ?</figcaption>
             </figure>
             <div className="anc">
@@ -290,7 +290,7 @@ const list = ()=>{
               <div className="preim">
                 <div className="preim3" />
                 <figure className="preim1">
-                  <img src="img/imgnis/mark4_white.png" alt />
+                  <img src="/public//publicnis/mark4_white.png" alt="foto" />
                   <figcaption className="figcaptionn">
                     ПРЕИМУЩЕСТВА
                   </figcaption>
@@ -308,7 +308,7 @@ const list = ()=>{
           <div className="nis2">
             <div className="nis22">
               <figure className="figure">
-                <img src="img/mark1_white.png" alt />
+                <img src="/public/mark1_white.png" alt="foto" />
                 <figcaption className="figcaption">
                   ЧТО УЧЕНИКИ ГОВОРЯТ О НАС
                 </figcaption>
@@ -332,13 +332,13 @@ const list = ()=>{
               </div>
               <div className="fo2">
                 <a href>
-                  <img src="Img/imgnis/025-instagram.png" alt />
+                  <img src="/public//publicnis/025-instagram.png" alt="foto" />
                 </a>
                 <a href>
-                  <img src="Img/imgnis/020-vk.png" alt />
+                  <img src="/public//publicnis/020-vk.png" alt="foto" />
                 </a>
                 <a href>
-                  <img src="Img/imgnis/021-facebook.png" alt />
+                  <img src="/public//publicnis/021-facebook.png" alt="foto" />
                 </a>
                 <p>+7 893 567 78 67</p>
               </div>
