@@ -6,13 +6,15 @@ import Mob_chose_learn from "./components/mob/mob_chose_learn";
 import Mob_head from "./components/mob/mob_head";
 import Mob_prem_core from "./components/mob/mob_prem_core";
 import Slider_mob from "./components/mob/slider_mob";
+import Mob_footer_top from "./components/mob/mob_footer_top";
+import Mob_footer_bottom from "./components/mob/mob_footer_bottom";
+
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-inputVoloda: "",
-vova: [],
+
 };
   }
  
@@ -25,6 +27,8 @@ vova: [],
         <Mob_chose_learn />
         <Mob_prem_core />
         <Slider_mob />
+        <Mob_footer_top />
+        <Mob_footer_bottom />
         </div>
         <List1 />
         <List2 />
