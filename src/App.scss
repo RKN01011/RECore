@@ -13,7 +13,7 @@
   border-radius: 1px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
   .list{
       display: none;
   }
@@ -29,7 +29,7 @@
   height: 1px;
   border-bottom: 2px solid;
   margin-top: 5px;
-  transform: matrix(1, 0, 0, 1, 7, 10);
+  transform: matrix(1, 0, 0, 1, -70, 10);
 }
 .tap_menu{
   margin-top: 20px;
@@ -125,13 +125,14 @@
   font-size: 6pt;
   margin: 0;
   width: 50px;
-  transform: matrix(1, -1, 1, 1, 3, -39);
+  transform: matrix(1, -1, 1, 1, -46, -26);
+  color: black;
 }
 .norn::after{
-  /*content:*/
-  position: absolute;
-  bottom: -81px;
-  right: -46px;
+  content: url(http://192.168.0.105:3000/static/media/mark3.0dbe4c51.svg);
+    position: absolute;
+    bottom: 8px;
+    left: 6px;
 }
 .head_main_mob{
   display: flex;
@@ -510,7 +511,7 @@ input[type="radio"]{
 
 .mob_footer_top{
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url(http://192.168.0.105:3000/static/media/gavan.f2d160c1.png);
+  url(../src/imgnis/gavan.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80% 50%;
@@ -607,99 +608,28 @@ input[type="radio"]{
        max-width: 1920px;
       }
            
-      @media (min-width: 601px) and (max-width: 1300px)
+      @media (min-width: 801px) and (max-width: 1300px)
       {
-          .mob_list{ display: none;}
-          .nis1111{
-              left: 0px;
+          .mob_list{ display: none;
           }
-          section {
-              left: -9%;
+          section{
+          left: -110px;
+         }
+         .nis1111{
+          left: 0px;
+         }
           }
-          .c1 {
-              width: 400px;
-              height: 400px;
-          }
-          .c12 {
-              transform: matrix(1, 0, 0, 1, 133, 275);
-          }
-          .c13 {
-              transform: matrix(0.7, 0.7, -0.7, 0.7, 180, -145);
-          }
-          .c3 {
-              transform: matrix(0.77, 0.77, -0.77, 0.77, 64, -69);
-          }
-          .kub1 {
-              top: -270px;
-          }
-          .kub2 {
-              height: 1650px;
-              top: -465px;
-              left: 1215px;
-          }
-          .fo1 {
-              transform: matrix(1, 0, 0, 1, 15, -140);
-          }
-          .fo2 {
-              transform: matrix(1, 0, 0, 1, 10, -120);
-          }
-          .fo3 {
-              transform: matrix(1, 0, 0, 1, 110, -133);
-          }
-          .cofe {
-              width: 210px;
-              height: 210px;
-          }
-          .znak {
-              transform: matrix(1, -1, 1, 1, 210, 145);
-          }
-          .znak2 { transform: matrix(1, -1, 1, 1, 130, -12); }
-          }
-          .spisk {
-              width: 230px;
-              height: 230px;
-              transform: matrix(1, 1, -1, 1, 428, -380);
-          }
-      
+        
       @media (min-width: 1301px) and (max-width: 4350px)
       {
-          .mob_list{ display: none;}
-          .nis1111{
-              left: 235px;
+          .mob_list{ display: none;
           }
-          section {
-              left: 5%;
-          }
-      .c1 {
-          width: 500px;
-          height: 500px;
-      }
-      .c12 {
-          transform: matrix(1, 0, 0, 1, 165, 350);
-      }
-      .c13 {
-          transform: matrix(0.7, 0.7, -0.7, 0.7, 230, -165);
-      }
-      .c3 {
-          transform: matrix(0.77, 0.77, -0.77, 0.77, 51, -56);
-      }
-          .kub1 {
-              top: -200px;
-          }
-          .kub2 {
-              height: 1650px;
-              top: -465px;
-              left: 1215px;
-          }
-          .fo1 {
-              transform: matrix(1, 0, 0, 1, -120, -140);
-          }
-          .fo2 {
-              transform: matrix(1, 0, 0, 1, 10, -120);
-          }
-          .fo3 {
-              transform: matrix(1, 0, 0, 1, 265, -133);
-          }
+          section{
+            left: 0px;
+           }
+           .nis1111{
+            left: 210px;
+           }
       }
 
 
@@ -707,22 +637,27 @@ input[type="radio"]{
   border-left: 655px solid #fff;
   border-bottom: 760px solid #fff;
   transform: rotate(-45deg);
-  position: absolute;
-  left: 23px;
-  width: 1px
+  position: relative;
+  left: 45px;
+  bottom: 190px;
+  width: 1px;
 }
 .kub2 {
-  width: 700px;
+  width: 1700px;
+  height: 1700px;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  position: absolute;
+  position: relative;
   background: #fff;
+  left: 1255px;
+  bottom: 1506px;
 }
 li a {
   text-decoration: none;
   
   color:black;
 }
-li a:hover { border-top: 1px solid black;
+.uul li a:hover { border-top: 1px solid black;
   transition-property: all;
   transition-duration: 200ms;
   color: black;
@@ -753,23 +688,29 @@ li a:hover { border-top: 1px solid black;
   display: flex;
   margin-top: 15px;
 }
+.VFI > li{
+  margin-right: 10px;
+}
 .lii {
   margin-right:30px; 
 }
 
 span {
   display: flex;
-  margin-right: 15%;
   margin-top: .9em;
-  width: 191px;
+  width: 212px;
 }
-
+.publicg {
+  width: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 .menu {display: flex;
      flex-flow: column;
      z-index: 3;
      position: absolute;
-     top: 164px;
+     top: 70px;
      left: 2%;
 }
 .imgg {width: 165px;
@@ -798,9 +739,11 @@ section { width: 60%;
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 311px;
+        top: 370px;
 }
 .c1 {
+    width: 500px;
+    height: 500px;
     transform:  matrix(0.77, 0.77, -0.77, 0.77, 35, -100);
     left: 525px;
     overflow: hidden;
@@ -816,24 +759,30 @@ section { width: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;     
-  width: 100%;
+  width: 102%;
   height: 100%;
-  transform:matrix(0.97, -0.97, 0.97, 0.97, 0, 0); }
-
-  
-
+  transform:matrix(0.97, -0.97, 0.97, 0.97, 0, 0);
+  position: relative; 
+}
 .c12 {
   width: 33%;
   height: 33%;
+  position: absolute;
+  left: 170px;
+  bottom: -10px;
 }
-
 .c13 {
+  position: absolute;
+  transform: matrix(0.7, 0.7, -0.7, 0.7, 0, 0);
+  background-color: #BACBDC;
   width: 40px;
-  height: 40px;}
-
-.c2 {width: 300px;
-  height: 300px;
-  transform: matrix(0.87, 0.87, -0.87, 0.87, 35, -40);
+  height: 40px;
+  top: 0px;
+  left: 233px;
+}
+.c2 {width: 350px;
+  height: 350px;
+  transform: matrix(0.87, 0.87, -0.87, 0.87, 35, 70);
   left: 200px;
   background: rgb(186, 152, 152); 
   position: absolute;
@@ -843,7 +792,7 @@ section { width: 60%;
   z-index: 2; }
 
 .c23 { background: #fff;
-     transform: matrix(1, 0, 0, 1, -121, -121) ;
+     transform: matrix(1, 0, 0, 1, -141, -142) ;
      position: absolute;
      width: 20%;
      height: 20%;
@@ -879,14 +828,19 @@ section { width: 60%;
   border: 1px solid black;
   padding: 7px 30px 7px 30px;
   margin-left: 45px;
-  transform: matrix(1, 0, 0, 1, 0, -18);
+  transform: matrix(1, 0, 0, 1, 25, -20);
   background: rgb(186, 152, 152); 
+}
+.c223:hover{
+  border: 1px solid #bacbdc;
+  color: #bacbdc;
 }
 
 .c3 { width: 180px;
     height: 180px;
-    left: 425px;
-    top: 445px;
+    left: 476px;
+    top: 446px;
+    transform: matrix(0.77, 0.77, -0.77, 0.77, 51, -56);
     background: rgb(186, 203, 220); 
     position: absolute;
     display: flex;
@@ -922,7 +876,7 @@ article {
 
 figure {
   width: 100%;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -950,6 +904,10 @@ figure figcaption {
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   position: relative;
+  transition: 0.4s ease;
+}
+.a1:hover{
+  background: rgba(0, 0, 0, 0.8);
 }
 .pp {
   margin: 8% 0 11% 0;
@@ -980,7 +938,7 @@ figure figcaption {
 .arow1, .arow {
   color: #fff;
   padding-right: 38px;
-  /*ackground: url(img/Arrow.png) no-repeat right;*/ 
+  background: url(../src/ico/Arrow.png) no-repeat right;
 }
 .arow1:hover {
   color:rgb(186, 152, 152);
@@ -1007,7 +965,6 @@ figure figcaption {
 .nis2 {
   width: 100%;
   height: 755px;
-  /*ackground:*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1015,7 +972,8 @@ figure figcaption {
 .nis22 {
   width: 100%;
   height: 100%;
-  background-image:  linear-gradient(180deg, rgba(30, 30, 30, 0.8) 0%, rgba(16, 16, 16, 0) 54.14%, rgba(16, 16, 16, 0) 54.15%, rgba(2, 2, 2, 0.6) 100%);
+  background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.8) 0%, rgba(16, 16, 16, 0) 54.14%, rgba(16, 16, 16, 0) 54.15%, rgba(2, 2, 2, 0.6) 100%),
+  url(../src/imgnis/sea.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1035,15 +993,12 @@ figure figcaption {
 .figcaption {
   margin: 1%;
   color: #fff;
-  font-size: 14pt;
-  margin-top: 4%;
+  font-size: 15pt;
+  margin-top: 2%;
 }
 .nis222 {
   display: flex;
   background-color: rgba(0, 0, 0, 0.344);
-  /*background-image:*/
-  background-repeat: no-repeat;
-  background-position: 50% 130%;
   width: 900px;
   height: 320px;
   justify-content: center;
@@ -1051,8 +1006,60 @@ figure figcaption {
   flex-direction: column;
   padding: 2%;
   color:  #fff;
+  transition: .3s ease-in;
 }
-.nis222::after {
+.nis222:hover{
+  background-color: rgba(0, 0, 0, 0.464);
+}
+#click1:checked ~ .polosa_core_hidden .polosa_core{
+transform: translate(0px)
+}
+#click2:checked ~ .polosa_core_hidden .polosa_core{
+transform: translate(-650px)
+}
+#click3:checked ~ .polosa_core_hidden .polosa_core{
+transform: translate(-1300px)
+}
+#click4:checked ~ .polosa_core_hidden .polosa_core{
+transform: translate(-1950px)
+}
+#click5:checked ~ .polosa_core_hidden .polosa_core{
+transform: translate(-2600px)
+}
+
+#click1:checked ~ .label_block .core_k1 {
+  background-color: transparent;
+  }
+  #click2:checked ~ .label_block .core_k2{
+  background-color: transparent;
+  }
+  #click3:checked ~ .label_block .core_k3{
+  background-color: transparent;
+  }
+  #click4:checked ~ .label_block .core_k4{
+  background-color: transparent;
+  }
+  #click5:checked ~ .label_block .core_k5{
+  background-color: transparent;
+  }
+.polosa_core_hidden{
+  overflow: hidden;
+    width: 650px;
+    height: 400px;
+}
+.polosa_core{
+  display: flex;
+    width: 3250px;
+    height: 100%;
+    transition: 1s cubic-bezier(0,.73,.41,1.07) .1s;
+
+}
+.polosa_core > div{
+  width: 20%;
+  height: 100%;
+
+}
+#after {
   content: "";
   width: 15px;
   height: 15px;
@@ -1060,8 +1067,9 @@ figure figcaption {
   border-left: 3px solid #fff;
   transform: matrix(1, 1, -1, 1, -365, 15);
   position: absolute;
+  transition: .01s ease;
 }
-.nis222::before {
+#before {
   content: "";
   width: 15px;
   height: 15px;
@@ -1069,10 +1077,37 @@ figure figcaption {
   border-right: 3px solid #fff;
   transform: matrix(1, -1, 1, 1, 365, 15);
   position: absolute;
+  transition: .01s ease;
+}
+#after:active{
+transform: matrix(1.2, 1.2, -1.2, 1.2, -365, 15);
+}
+#before:active{
+transform: matrix(1.2, -1.2, 1.2, 1.2, 365, 15);
 }
 .nis222 p {
 text-align: center;
-margin: 5% 15% 5% 15%;
+margin: 10% 15% 5% 15%;
+}
+cite{
+  position: relative;     
+  top: 45px;     
+  left: 265px;
+}
+.label_block{
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: space-evenly;
+}
+.core_slid_kub{
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  border: 1px solid #fff;
+}
+.core_k1, .core_k2, .core_k3, .core_k4, .core_k5{
+background-color: #fff;
 }
 .nis1111 {
   position: absolute;
@@ -1084,7 +1119,7 @@ margin: 5% 15% 5% 15%;
 .foooter {
   width: 100%;
   height: 545px;
-  /*background:*/
+  background: url(../src/imgnis/gavan.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1092,10 +1127,17 @@ margin: 5% 15% 5% 15%;
   justify-content: center;
   align-items: flex-end;
 }
+.foooter > div{
+  width: 100%;
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+}
 .fo1 {
   position: relative;
   width: 290px;
   height: 80px;
+  top: -32px
 }
 .fo11 {
   font-size: 20pt;
@@ -1105,14 +1147,15 @@ margin: 5% 15% 5% 15%;
   color: #fff;
 }
 .fo1::before {
-  /*content:*/
+  content: url(../src/ico/mark3_white.png);
   position: absolute;
-  transform: matrix(1, 0, 0, 1, -105, 20);
+  transform: matrix(1, 0, 0, 1, -55, 30);
 }
 .fo2 {
   position: relative;
   width: 170px;
   height: 80px;
+  top: 0;
 
 }
 .fo2 a {
@@ -1128,6 +1171,7 @@ margin: 5% 15% 5% 15%;
   width: 318px;
   height: 80px;
   color: #fff;
+  top: -16px
 }
 .fo31, .fo32 {
   width: 295px;
@@ -1135,7 +1179,7 @@ margin: 5% 15% 5% 15%;
 .map {
   width: 100%;
   height: 330px;
-  /*background-image: url(img/map.png);*/
+  background-image: url(../src/imgnis/map.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1148,7 +1192,7 @@ margin: 5% 15% 5% 15%;
   overflow: hidden;
 }
 .cofe1 {
-  /*background: */
+  background: url(../src/imgnis/green-chameleon-21532-unsplash.png);
   background-position: 70% 44%;
   background-repeat: no-repeat;
   background-size: 123%;
@@ -1165,7 +1209,7 @@ margin: 5% 15% 5% 15%;
 }
 
 .znak1 {
-  /*background: */
+  background: url(../src/imgnis/einar-h-reynis-544755-unsplash.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1244,7 +1288,7 @@ margin: 5% 15% 5% 15%;
 }
 
 .preim {
-  transform: matrix(1, 1, -1, 1, 668, -516);
+  transform: matrix(1, 1, -1, 1, 678, -516);
   width: 170px;
   height: 170px;
   background-color: rgb(67, 33, 50);
@@ -1268,7 +1312,7 @@ transform: matrix(1, 0, 0, 1, 8, 8);
   overflow: hidden;
 }
 .grandm1 {
-  /*background-image:*/
+  background-image: url(../src/imgnis/tutor-02.png);
   transform: matrix(1, -1, 1, 1, 11, 17 );
   background-position: 38% 34%;
   background-repeat: no-repeat;
@@ -1287,11 +1331,11 @@ transform: matrix(1, 0, 0, 1, 8, 8);
   width: 55%;
   height: 55%;
   background-color: #fff;
-  transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 5, 5);
 }
 .man {
 
-  transform: matrix(1, -1, 1, 1, 815, -470 );
+  transform: matrix(1, -1, 1, 1, 825, -465 );
   position: absolute;
   width: 110px;
   height: 110px;
@@ -1299,7 +1343,7 @@ transform: matrix(1, 0, 0, 1, 8, 8);
 
 }
 .man1 {
-  /*background-image:*/
+  background-image: url(../src/imgnis/online_obytcheii.png);
   transform: matrix(1, 1, -1, 1, 0, 0 );
   width: 101%;
   height: 103%;
@@ -1312,7 +1356,7 @@ transform: matrix(1, 0, 0, 1, 8, 8);
   width: 30px;
   height: 30px;
   background-color: rgb(17, 33, 50);
-  transform: matrix(1, 1, -1, 1, 771, -430 );
+  transform: matrix(1, 1, -1, 1, 780, -425 );
   position: absolute;
 }
 .klass {
@@ -1324,7 +1368,7 @@ transform: matrix(1, 0, 0, 1, 8, 8);
 }
 
 .klass1 {
-  /*background-image:*/
+  background-image: url(../src/imgnis/03.png) ;
   transform: matrix(1, 1, -1, 1, 0, 0 );
   width: 101%;
   height: 103%;

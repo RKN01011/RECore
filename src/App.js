@@ -13,10 +13,9 @@ import Mob_footer_bottom from "./components/mob/mob_footer_bottom";
 class App extends Component {
   constructor(){
     super();
-    this.state = {
-
-};
-  }
+    this.state = {};
+ }
+ 
  
   
   render() {
@@ -32,6 +31,8 @@ class App extends Component {
         </div>
         <List1 />
         <List2 />
+      
+        
       </div>
     );
   }

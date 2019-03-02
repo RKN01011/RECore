@@ -11,24 +11,24 @@ const list1 = ()=>{
               <ul className="VFI">
                 <li>
                   <a href="" className="lii">
-                    <img src="/public/ico/ist.png" href="" alt="Instagram" />
+                    <img src={require("../../ico/ist.png")} href="" alt="Instagram" />
                   </a>
                 </li>
                 <li>
                   <a href="" className="lii">
-                    <img src="/public/vk.png" alt="VK" />
+                    <img src={require("../../ico/vk.png")} href="" alt="VK" />
                   </a>
                 </li>
                 <li>
                   <a href="" className="lii">
-                    <img src="/public/face.png" alt="Facebook" />
+                    <img src={require("../../ico/face.png")} href="" alt="Facebook"/>
                   </a>
                 </li>
               </ul>
             </div>
           </header>
           <nav className="menu">
-            <img src="/public/NORN.png" alt="Norh" className="publicg" />
+            <img src={require("../../ico/NORN.png")} alt="Norh" className="publicg" />
             <div>
               <ul className="uul">
                 <li>
@@ -49,7 +49,7 @@ const list1 = ()=>{
           <section>
             <div className="c1">
               <div className="c11">
-                <img src="../../imgnis/houses.png" id="ID" className="c12" alt="foto" />
+                <img src={require("../../imgnis/houses.png")} id="ID" className="c12" alt="foto" />
                 <div className="c13" />
               </div>
             </div>
@@ -88,7 +88,7 @@ const list1 = ()=>{
           <div className="radial" />
           <article>
             <figure>
-              <img src="/public/mark5_white.png" alt="foto" />
+              <img src={require("../../ico/mark5_white.png")} alt="foto" />
               <figcaption>КАКОЙ ВИД ОБУЧЕНИЯ ПОДОЙДЕТ ВАМ?</figcaption>
             </figure>
             <div className="anc">
@@ -114,9 +114,6 @@ const list1 = ()=>{
                 <p className="pp">
                   Индивидуальные занятия с преподавателем в удобное время
                 </p>
-                <a href="" className="arow">
-                  Заполнить анкету
-                </a>
               </div>
             </div>
           </article>
