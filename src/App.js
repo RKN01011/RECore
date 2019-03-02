@@ -8,6 +8,7 @@ import Mob_prem_core from "./components/mob/mob_prem_core";
 import Slider_mob from "./components/mob/slider_mob";
 import Mob_footer_top from "./components/mob/mob_footer_top";
 import Mob_footer_bottom from "./components/mob/mob_footer_bottom";
+import { connect } from 'react-redux';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
  
   
   render() {
+    console.log(this.props)
     return (
       <div className="App">
         <div className="mob_list">
@@ -38,4 +40,12 @@ class App extends Component {
   }
 }
 
-export default App;
+
+
+export default connect(
+  (store)=>{
+return {
+  base: store.base
+}
+  }
+)(App)

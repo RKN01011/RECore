@@ -14,7 +14,7 @@ const list1 = ()=>{
                     <img src={require("../../ico/ist.png")} href="" alt="Instagram" />
                   </a>
                 </li>
-                <li>
+                <li className="l1">
                   <a href="" className="lii">
                     <img src={require("../../ico/vk.png")} href="" alt="VK" />
                   </a>
@@ -28,20 +28,21 @@ const list1 = ()=>{
             </div>
           </header>
           <nav className="menu">
-            <img src={require("../../ico/NORN.png")} alt="Norh" className="publicg" />
+            <p className="publicg">N O R N</p>
+
             <div>
               <ul className="uul">
                 <li>
-                  <a href="">курсы</a>
+                  <a href="">КУРСЫ</a>
                 </li>
                 <li>
-                  <a href="">учителя</a>
+                  <a href="">О НАС</a>
                 </li>
                 <li>
-                  <a href="">летняя школа</a>
+                  <a href="">ЛЕТНЯЯ ШКОЛА</a>
                 </li>
                 <li>
-                  <a href="">контакты</a>
+                  <a href="">КОНТАКТЫ</a>
                 </li>
               </ul>
             </div>

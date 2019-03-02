@@ -675,6 +675,7 @@ li a {
 #sholl {flex: 7;
        margin-left: 4%;
        margin-top: 15px;
+       font-size: 14pt;
 }
 
 #nomber { flex: 2;
@@ -688,22 +689,33 @@ li a {
   display: flex;
   margin-top: 15px;
 }
-.VFI > li{
-  margin-right: 10px;
-}
 .lii {
-  margin-right:30px; 
+  margin-right:40px; 
+}
+.l1{
+transform: translateY(-5px)
 }
 
 span {
   display: flex;
   margin-top: .9em;
   width: 212px;
+  font-weight: 500;
 }
 .publicg {
+  font-size: 22pt;
   width: 200px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+  margin-left: 130px;
+  margin-bottom: 55px;
+  margin-top: 40px;
+  font-weight: 500;
+  position: relative;
+}
+.publicg::before{
+  content: url(./ico/mark3.png);
+  position: absolute;
+  top: -20px;
+  left: -103px
 }
 
 .menu {display: flex;
@@ -727,8 +739,10 @@ li {list-style-type: none;
   display: table-cell;
 }
 
-.uul { display: table;
-   width: 500px;
+.uul { 
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
 }
 
 /* Дуратские квадраты */
@@ -750,8 +764,7 @@ section { width: 60%;
     background-color: transparent;
     z-index: 2;
     position: absolute;
-     
-   
+    border-radius: 3px;
 }
 
 .c11 {
@@ -779,6 +792,7 @@ section { width: 60%;
   height: 40px;
   top: 0px;
   left: 233px;
+  border-radius: 2px;
 }
 .c2 {width: 350px;
   height: 350px;
@@ -789,7 +803,8 @@ section { width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2; }
+  z-index: 2;
+  border-radius: 3px; }
 
 .c23 { background: #fff;
      transform: matrix(1, 0, 0, 1, -141, -142) ;
@@ -847,11 +862,13 @@ section { width: 60%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1; }
+    z-index: 1;
+    border-radius: 3px; }
 
 
 .c31 { transform: matrix(0.82, -0.82, 0.82, 0.82, 0, 0);
      font-size: 10pt;
+     font-weight: 500;
 }
 
 .c32 { transform: matrix(1.3, 0, 0, 1.3, 77, -78);
@@ -961,6 +978,15 @@ figure figcaption {
   background: rgb(17, 33, 50);
   overflow: hidden;
   position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.nis1::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 25px;
+  top: -30px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
 }
 .nis2 {
   width: 100%;
@@ -978,6 +1004,7 @@ figure figcaption {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .figure {
   width: 100%;
@@ -1007,6 +1034,7 @@ figure figcaption {
   padding: 2%;
   color:  #fff;
   transition: .3s ease-in;
+  border-radius: 5px;
 }
 .nis222:hover{
   background-color: rgba(0, 0, 0, 0.464);
@@ -1029,18 +1057,23 @@ transform: translate(-2600px)
 
 #click1:checked ~ .label_block .core_k1 {
   background-color: transparent;
+  animation: col 2s ease-in-out 0.5s normal, move 5s linear 2s;
   }
   #click2:checked ~ .label_block .core_k2{
   background-color: transparent;
+  animation: col 2s ease-in-out 0.5s normal, move 5s linear 2s;
   }
   #click3:checked ~ .label_block .core_k3{
   background-color: transparent;
+  animation: col 2s ease-in-out 0.5s normal, move 5s linear 2s;
   }
   #click4:checked ~ .label_block .core_k4{
   background-color: transparent;
+  animation: col 2s ease-in-out 0.5s normal, move 5s linear 2s;
   }
   #click5:checked ~ .label_block .core_k5{
   background-color: transparent;
+  animation: col 2s ease-in-out 0.5s normal, move 5s linear 2s;
   }
 .polosa_core_hidden{
   overflow: hidden;
@@ -1068,6 +1101,15 @@ transform: translate(-2600px)
   transform: matrix(1, 1, -1, 1, -365, 15);
   position: absolute;
   transition: .01s ease;
+  border-radius: 2px;
+}
+#after:hover{
+  border-bottom: 3px solid rgb(141, 139, 139);
+  border-left: 3px solid rgb(141, 139, 139);
+}
+#before:hover{
+  border-bottom: 3px solid rgb(141, 139, 139);
+  border-right: 3px solid rgb(141, 139, 139);
 }
 #before {
   content: "";
@@ -1078,6 +1120,8 @@ transform: translate(-2600px)
   transform: matrix(1, -1, 1, 1, 365, 15);
   position: absolute;
   transition: .01s ease;
+  border-radius: 2px;
+
 }
 #after:active{
 transform: matrix(1.2, 1.2, -1.2, 1.2, -365, 15);
@@ -1105,6 +1149,7 @@ cite{
   height: 15px;
   transform: rotate(45deg);
   border: 1px solid #fff;
+  border-radius: 2px;
 }
 .core_k1, .core_k2, .core_k3, .core_k4, .core_k5{
 background-color: #fff;
@@ -1126,6 +1171,7 @@ background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .foooter > div{
   width: 100%;
@@ -1149,7 +1195,7 @@ background-color: #fff;
 .fo1::before {
   content: url(../src/ico/mark3_white.png);
   position: absolute;
-  transform: matrix(1, 0, 0, 1, -55, 30);
+  transform: matrix(1, 0, 0, 1, -90, 30);
 }
 .fo2 {
   position: relative;
@@ -1255,6 +1301,7 @@ background-color: #fff;
   transform: rotate(-45deg);
   left: 60px;
   top: -10px;
+
 }
 .pp2:after {
   content: "";
