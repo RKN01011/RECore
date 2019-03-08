@@ -1,15 +1,12 @@
+import { GET_BASE } from "../hellpers/actionConst";
 
 
 
-const initState = [
-    function r (){
-        let hyi = window.document.getElementsByClassName("c11")
-        hyi[0].style.top = "3000px"
-    }
-];
+const initState = [];
 export default function base(state = initState, action){
     switch(action.type){
-        
+        case GET_BASE:
+        return [... action.payload];
         default:
         return state;
     }

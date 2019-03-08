@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 
 
 const list1 = ()=>{
@@ -7,12 +8,12 @@ const list1 = ()=>{
           <header className="contact">
             <p id="sholl">Школа скандинавских языков</p>
             <div id="nomber">
-              <span>+ 7 893 567 78 67</span>
+              <span className="app_number">+ 7 893 567 78 67</span>
               <ul className="VFI">
                 <li>
-                  <a href="" className="lii">
+                  <Link to="/user" className="lii">
                     <img src={require("../../ico/ist.png")} href="" alt="Instagram" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="l1">
                   <a href="" className="lii">
@@ -47,7 +48,7 @@ const list1 = ()=>{
               </ul>
             </div>
           </nav>
-          <section>
+          <section className="app_section">
             <div className="c1">
               <div className="c11">
                 <img src={require("../../imgnis/houses.png")} id="ID" className="c12" alt="foto" />

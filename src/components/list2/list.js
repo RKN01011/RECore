@@ -174,7 +174,7 @@ const list2 = ()=>{
             <div className="foooter">
             <div>
               <div className="fo1">
-                <span className="fo11">NORN</span>
+                <span className="fo11">NORN</span> <br />
                 <span className="fo12">школа скандинавских языков</span>
               </div>
               <div className="fo2">

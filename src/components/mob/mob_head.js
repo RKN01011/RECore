@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from "react-redux"
 
 class Mob_head extends Component {
   constructor(){
@@ -45,7 +46,7 @@ class Mob_head extends Component {
       </div>
     </label>
   </div>
-  <div className="head_mob_h_block">
+  <div className="head_mob_h_block" >
     <span className="norn">N O R N</span>
   </div>
   <div className="head_mob_h_call">
@@ -111,4 +112,10 @@ class Mob_head extends Component {
 }
 
 
-export default Mob_head;
+export default connect(
+  (store)=>{
+return {
+  base: store.base
+}
+  }
+) (Mob_head);
