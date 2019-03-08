@@ -39,11 +39,9 @@ class Mob_head extends Component {
     </div>
   <div className="head_mob_h_menu">
     <label htmlFor="tap" className="tap_menu">
-      <div className="monitor">
-        <span className="lini" />
-        <span className="lini" />
-        <span className="lini" />
-      </div>
+        <p className="lini" />
+        <p className="lini" />
+        <p className="lini" />
     </label>
   </div>
   <div className="head_mob_h_block" >
