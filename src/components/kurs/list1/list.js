@@ -9,7 +9,7 @@ b.style.bottom = "-24px";
 const List1 = ()=>{
     return(
 <section className="listkurs">
-  <div className="navi">
+<div className="navi">
     <div className="logo">
       <div className="logo1">
         <span>NORN</span>
@@ -43,36 +43,70 @@ const List1 = ()=>{
         </ul>
       </div>
     </nav>
-  </div>
+</div>
   <div className="kubs">
-    <div className="cub cub1">
+  <input type="radio" name="kurs_kub" id="kurs_input1" form="form_kurs"/>
+  <input type="radio" name="kurs_kub" id="kurs_input2" form="form_kurs"/>
+  <input type="radio" name="kurs_kub" id="kurs_input3" form="form_kurs"/>
+  <input type="radio" name="kurs_kub" id="kurs_input4" form="form_kurs"/>
+  <input type="radio" name="kurs_kub" id="kurs_input5" form="form_kurs"/>
+  <form action="" id="form_kurs">
+  <input type="submit" name="kurs_kub" id="kurs_submit"/>
+  </form>
+  <label className="cub cub1">
       <span className="cun">Норвежский</span>
-      <a href className="cun1">
+      <label htmlFor="kurs_submit" className="cun1">
         Пройти входное тестирование
-      </a>
+      </label>
+      <div className="cub12 cub_q" >
+      <span className="cu" style={{left: "0px"}}>Норвежский</span> 
     </div>
-    <div className="cub cub2">
-      <div className="cub22 cub_q" />
-      <span className="cu">Исладский</span>
+  </label>
+    <label className="cub cub2" htmlFor="kurs_input1">
+    <span className="cun">Исладский</span>
+      <label className="cun1" htmlFor="kurs_submit">
+        Пройти входное тестирование
+      </label>
+    <div className="cub22 cub_q" >
+      <span className="cu">Исладский</span> 
     </div>
-    <div className="cub cub3">
-      <div className="cub32 cub_q" />
+    </label>
+    <label className="cub cub3" htmlFor="kurs_input2">
+    <span className="cun">Финский</span>
+      <label className="cun1" htmlFor="kurs_submit">
+        Пройти входное тестирование
+      </label>
+      <div className="cub32 cub_q" >
       <span className="cu">Финский</span>
+       </div>
+      
+    </label>
+    <label className="cub cub4" htmlFor="kurs_input3">
+    <span className="cun">Швевский</span>
+      <label className="cun1" htmlFor="kurs_submit">
+        Пройти входное тестирование
+      </label> 
+      <div className="cub42 cub_q" >
+      <span className="cu">Швевский</span> 
+      </div>
+      
+    </label>
+    <label className="cub cub5" htmlFor="kurs_input4">
+    <span className="cun">Датский</span>
+      <label className="cun1" htmlFor="kurs_submit">
+        Пройти входное тестирование
+      </label> 
+      <div className="cub52 cub_q" >
+      <span className="cu">Датский</span> 
     </div>
-    <div className="cub cub4">
-      <div className="cub42 cub_q" />
-      <span className="cu">Швевский</span>
-    </div>
-    <div className="cub cub5">
-      <div className="cub52 cub_q" />
-      <span className="cu">Датский</span>
-    </div>
+      
+    </label>
     <div className="cub6">
       <div className="cub66">
         <div className="cub666" />
       </div>
     </div>
-  </div>
+    </div>
   <div className="listnis">
     <label className="l l1" onClick={visable}>
       <div className="flex_nis1">

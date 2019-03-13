@@ -9,7 +9,7 @@ import Slider_mob from "./components/mob/slider_mob";
 import Mob_footer_top from "./components/mob/mob_footer_top";
 import Mob_footer_bottom from "./components/mob/mob_footer_bottom";
 import { connect } from 'react-redux';
-import { getBase } from './actions/base.action';
+import { getBase, getDelet } from './actions/base.action';
 
 
 class App extends Component {
@@ -34,9 +34,7 @@ class App extends Component {
         </div>
         <List1 />
         <List2 />
-      
-        
-      </div>
+    </div>
     );
   }
 }
@@ -51,9 +49,13 @@ return {
   },
 (dispatch)=>{
   return{
-    getUsers: async ()=>{
+    getUser: async ()=>{
       const action = await getBase();
-      dispatch(action)
+      dispatch(action);
+    },
+    getW: async ()=>{
+      const kiril = await getDelet();
+      dispatch(kiril);
     }
   }
   }

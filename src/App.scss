@@ -643,7 +643,6 @@ input[type="radio"]{
 .kub2 {
   width: 1700px;
   height: 1700px;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   position: absolute;
   background: #fff;
@@ -666,8 +665,7 @@ li a {
 .contact { display: flex;
          position: absolute;
          z-index: 3;
-         width: 100%;
-         
+         width: 100%;     
 }
 
 #sholl {flex: 7;
@@ -677,11 +675,7 @@ li a {
 }
 
 #nomber { flex: 2;
-       display: flex;
-       
-       
-        
-       
+       display: flex;      
 }
 .VFI {
   display: flex;
