@@ -1419,45 +1419,7 @@ transform: matrix(1, 0, 0, 1, 8, 8);
   background-repeat: no-repeat;
   background-size: contain;
 }
-aside {
-  position: fixed;
-  bottom: -15px;
-  left: -15px;
-  width: 60px;
-  height: 60px;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  padding: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s ease-out;
-  background-color: burlywood;
-  border-radius: 50px 50px 50px 5px;
-  z-index: 2;
-}
-aside:hover {
-  bottom: -10px;
-  left: -10px;
-  background-color: rgb(67, 33, 50);
-  
-}
 
-aside a {
-  margin: 0;
-  text-decoration: none;
-  color: rgb(67, 84, 101);
-  font-size: 12pt;
-  border-bottom: 3px solid transparent;
-  color: #fff;
-}
-aside a:hover{
-  text-decoration: none;
-  color: #fff;
-}
-
-aside a:active {
-  border-bottom: 3px solid rgb(17, 33, 50);
-}
 #top_menu {
   visibility: hidden;
 }

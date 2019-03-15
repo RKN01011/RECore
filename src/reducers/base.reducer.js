@@ -2,7 +2,7 @@ import { GET_BASE, GET_DELET } from "../hellpers/actionConst";
 
 
 
-const initState = [""];
+const initState = ["haha"];
 export default function base(state = initState, action){
     switch(action.type){
         case GET_BASE:

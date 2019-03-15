@@ -1,3 +1,6 @@
+$yellow : #ba9898 ;
+
+
 @media (min-width: 601px) and (max-width: 1500px) {
     .menu {width: 58%;}
     a  { width: 30%;
@@ -345,9 +348,10 @@ border: 2px solid black;
     background: rgba(0, 0, 0, 0.5);
     position: relative;
     border-radius: 3px;
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease-in-out;
     transform: matrix3d(1,0,0,0,0,1,0,0.00,0,0,1,0,0,0,0,1);
     display: flex;
+    cursor: pointer;
 }
 .l:hover {
     transform: matrix3d(1,0,0,0,0,1,0,0.00,0,0,1,0,0,0,0,0.95);
@@ -461,9 +465,9 @@ h1 {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    transform: matrix(1, 0, 0, 1, 0, 50);
     height: 50%;
     width: 100%;
+    top: 50px;
 }
 .nis_l{
     width: 481px;
@@ -491,6 +495,13 @@ h1 {
     text-align: center;
     color: #fff;
     font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s ease;
+}
+.footer_n:hover {
+    background-color: #bacbdc;
+    color: black;
 }
 .n {
     margin: 0px 30px 0px 30px ;
@@ -527,18 +538,116 @@ h1 {
     transition: 0.8s ease 0.1s;
     cursor: pointer;
 }
+input[type="checkbox"]{
+    display: none;
+}
+
+#feb05_02:checked ~ .nis_l .data .data_kurs1 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#feb07_02:checked ~ .nis_l .data .data_kurs2 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#feb10_02:checked ~ .nis_l .data .data_kurs3 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#feb20_02:checked ~ .nis_l .data .data_kurs4 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#mar05_03:checked ~ .nis_l .data .data_kurs5 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#mar07_03:checked ~ .nis_l .data .data_kurs6 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#mar10_03:checked ~ .nis_l .data .data_kurs7 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#mar15_03:checked ~ .nis_l .data .data_kurs8 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#mar20_03:checked ~ .nis_l .data .data_kurs9 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#mar31_03:checked ~ .nis_l .data .data_kurs10 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#apr05_04:checked ~ .nis_l .data .data_kurs11 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#apr07_04:checked ~ .nis_l .data .data_kurs12  {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#apr10_04:checked ~ .nis_l .data .data_kurs13 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#apr15_04:checked ~ .nis_l .data .data_kurs14 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#apr20_04:checked ~ .nis_l .data .data_kurs15 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#apr31_04:checked ~ .nis_l .data .data_kurs16 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#may05_05:checked ~ .nis_l .data .data_kurs17 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#may07_05:checked ~ .nis_l .data .data_kurs18 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#may10_05:checked ~ .nis_l .data .data_kurs19 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#may15_05:checked ~ .nis_l .data .data_kurs20 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#may20_05:checked ~ .nis_l .data .data_kurs21 {
+     background: #fff;
+     .li_nis{ visibility: visible; } }
+#jun05_06:checked ~ .nis_l .data .data_kurs22 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#jun07_06:checked ~ .nis_l .data .data_kurs23 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#jun10_06:checked ~ .nis_l .data .data_kurs24 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#jun15_06:checked ~ .nis_l .data .data_kurs25 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#jun20_06:checked ~ .nis_l .data .data_kurs26 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#jul05_07:checked ~ .nis_l .data .data_kurs27 {
+     background: #fff;
+     .li_nis{ visibility: visible; } }
+#jul07_07:checked ~ .nis_l .data .data_kurs28 {
+     background: #fff;
+    .li_nis{ visibility: visible; } }
+#jul10_07:checked ~ .nis_l .data .data_kurs29 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#jul15_07:checked ~ .nis_l .data .data_kurs30 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#jul20_07:checked ~ .nis_l .data .data_kurs31 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+#jul31_07:checked ~ .nis_l .data .data_kurs32 {
+    background: #fff;
+    .li_nis{ visibility: visible; } }
+
 .li_nis{
     font-size: 12px;
     margin-left: 110px;
-    visibility: hidden;
-}
-.data_ul:hover{
-    background: #fff;
-}
-.data_ul:hover > .li_nis{
-    visibility: visible;
-}
-
+    visibility: hidden;}
+    .data_ul:hover{
+            background: #fff;
+                 .li_nis{ visibility: visible; }
+    }
+         
 .footer_kurs::after{
     content: url("../../ico/mark3_white.png");
     position: absolute;
@@ -558,4 +667,145 @@ h1 {
 .footer_text{
     margin-bottom: 60px;
     width: 300px;
+}
+#form_chose {
+    width: 55%;
+    background-color: #bacbdc;
+    z-index: 2;
+    overflow: auto;
+    position: relative;
+    border-radius: 20px;
+    border: 10px solid rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+input[type="text"] {
+    width: 400px;
+    border-radius: 3px;
+    border: 2px;
+}
+input[type="submit"] {
+    width: 180px;
+    margin-left: 400px;
+    margin-top: 10px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px;
+    cursor: pointer;
+    transition: .1s ease;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+#kurs_chose {
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#kurs_data {
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+input[type="submit"]:hover{
+background-color: $yellow;
+color: #fff }
+textarea {
+    height: 100px !important;
+    border-radius: 3px;
+    border: 2px;
+}
+#f_cash:checked ~ .block_cash .f_cash {
+    border: 1px solid black;
+}
+#e_cash:checked ~ .block_cash .e_cash {
+    border: 1px solid black;
+}
+.f_cash:hover {
+    background-color: $yellow;
+    color: #fff ;
+}
+.e_cash:hover {
+    background-color: $yellow;
+    color: #fff ;  
+}
+.cash{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.block_cash{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.form_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form_frag {
+width: 500px;
+height: 100px;
+font-weight: 500;
+}
+.teg_kurs {
+    font-weight: 500;
+}
+.aside {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    z-index: 3;
+}
+#close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 60;
+    background-color: aliceblue;
+    border-radius: 40px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+        &:after {
+              content: "";
+              width: 25px;
+              height: 1px;
+              background: black;
+              position: absolute;
+              top: 19px;
+              left: 8px;
+              transform: rotate(45deg); }
+        &:before {
+              content: "";
+              width: 25px;
+              height: 1px;
+              background: black;
+              position: absolute;
+              top: 19px;
+              left: 8px;
+              transform: rotate(-45deg); }
+         &:hover{
+              transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+              color: $yellow; }
 }
