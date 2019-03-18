@@ -1,5 +1,5 @@
 export const getUser = () => {
-const name = [""];
+const name = ["dag"];
 return name;
 }
 

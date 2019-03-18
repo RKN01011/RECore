@@ -1,10 +1,14 @@
-import React from "react";
-import {connect} from "react-redux";
-import { getBase, getDelet } from '../../../actions/base.action';
+import React, { Component } from "react";
+import {connect} from "react-redux"
+import { getBase, getDelet } from "../../../actions/base.action";
+
+
+
 
 let form_chose = document.getElementsByClassName("aside");
-let body = document.body;
+let kurs_form = document.getElementById("kurs_form");
 
+let body = document.body;
 function visable (){
   if(form_chose[0].style.display == "flex"){
     form_chose[0].style.display = "none"
@@ -12,14 +16,50 @@ function visable (){
   } else {
     form_chose[0].style.display = "flex"
     body.style.overflow = "hidden";
+    }
+}
+export const chose = {
+  name: "",
+  data: [],
+  
+  setName(name){
+  let dn = name;
+  return this.name = dn + "";
+  },
+  setData(name){
+  let dn = name;
+  return this.data.push(dn);  
   }
 }
 
-function addKurs(){
-return ["aaa", "sss", "ddd"]
+function addChose(){
+  let kurs_form_chose = [];
+  for (let r = 0; r < kurs_form.length; r++) {
+    if (kurs_form[r].checked == true){
+    kurs_form_chose.push(kurs_form[r])
+    }
+  };
+  return kurs_form_chose;
 }
 
-const List2 = ()=>{
+class List2 extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      
+    };
+ }
+
+
+
+ base_list_two(){
+    return this.props.base.map((name)=>{
+    return <div key={name} className="kurs_comp"> { name }  </div> 
+    })
+    }
+   
+
+  render(){
     return(
 <section className="listKurs1">
   <header className="header_kurs">
@@ -30,6 +70,9 @@ const List2 = ()=>{
   </header>
   <main className="main_kurs">
   <form action="" id="kurs_form" />
+
+    
+
 
     <input type="checkbox" name="feb" value="feb05_02" id="feb05_02" form="kurs_form"/>
     <input type="checkbox" name="feb" value="feb07_02" id="feb07_02" form="kurs_form"/>
@@ -73,9 +116,12 @@ const List2 = ()=>{
   <aside id="form_chose">
   <div id="close" onClick={visable}></div>
   <h3 className="teg_kurs">Курс:</h3>
-  <div id="kurs_chose">{<div>{addKurs()}</div>}</div>
+  <div id="kurs_chose">{ 
+  this.base_list_two()
+  }</div>
+  
   <h3 className="teg_kurs">Дата:</h3>
-  <div id="kurs_data">{}</div>
+  <div id="kurs_data"></div>
 
   <input type="radio" name="pay_version" value="f_cash" form="kurs_form" id="f_cash"/>
   <input type="radio" name="pay_version" value="e_csh" form="kurs_form" id="e_cash"/>
@@ -115,7 +161,7 @@ const List2 = ()=>{
       <div className="data">
         <label className="data_ul data_kurs1" htmlFor="feb05_02">
           <span className="li">05.02</span>
-          <span className="li">Исладский А1</span>
+          <span className="li">Исландский 1А</span>
           <br />
           <span className="li_nis">
             17:00 - 19:00, вторник и пятница
@@ -392,8 +438,8 @@ const List2 = ()=>{
       </div>
     </div>
     <div className="footer">
-      <div className="footer_n" onClick={visable}>Записаться в группу</div>
-      <div className="footer_n n">Добавит в календарь</div>
+      <div className="footer_n" onClick={visable} >Записаться в группу</div>
+      <div className="footer_n n" onClick={this.listKurs}>Добавит в календарь</div>
     </div>
     <footer className="footer_kurs">
       <div className="footer_block" />
@@ -437,10 +483,11 @@ const List2 = ()=>{
       </div>
     </footer>
   </main>
+  <div className="das">{}</div>
 </section>
 
     );
-}
+ } }
 export default connect(
   (store)=>{
 return {
@@ -449,15 +496,14 @@ return {
   },
 (dispatch)=>{
   return{
-    getBase: async ()=>{
-      const action = await getBase();
+    getUser: async ()=>{
+      const action = await getBase()
       dispatch(action);
     },
     getW: async ()=>{
-      const kiril = await getDelet();
+      const kiril = await getDelet()
       dispatch(kiril);
     }
   }
   }
-)
-(List2);
+)( List2);

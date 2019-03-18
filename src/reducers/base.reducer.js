@@ -2,8 +2,8 @@ import { GET_BASE, GET_DELET } from "../hellpers/actionConst";
 
 
 
-const initState = ["haha"];
-export default function base(state = initState, action){
+const initState = ["sssssss", "sss", "aaaa"];
+export default function base (state = initState, action){
     switch(action.type){
         case GET_BASE:
         return [...action.payload];
@@ -13,3 +13,5 @@ export default function base(state = initState, action){
         return state;
     }
 }
+
+export {initState};

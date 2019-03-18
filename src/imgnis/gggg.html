@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="radio" name="feb" value="feb05_02" id="feb" form="kurs_form"/>
+    <input type="checkbox" name="feb" class="gogi" value="feb05_02" id="feb05_02" form="kurs_form"/>
+    <input type="checkbox" name="feb" class="gogi" value="feb05_02" id="feb05_02" form="kurs_form"/>
+    <input type="checkbox" name="feb" class="gogi" value="feb05_02" id="feb05_02" form="kurs_form"/>
+    </form>
+</body>
+<script>
+let gogi = document.getElementById("feb");
+let jojo = document.getElementsByClassName("gogi")
+
+gogi.addEventListener("click", ()=>{
+    for(let r = 0; r < jojo.length; ++r){
+        if(jojo[r].checked == false){
+            jojo[r].checked  = true
+        } else {
+            jojo[r].checked  = false
+        }
+    };
+}
+)
+
+</script>
+</html>
